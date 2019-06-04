@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import React from 'react'
+import ColorTracker from './components/ColorTracker'
 
-class App extends Component {
-  render() {
-    return <HelloWorld />
-  }
+export default function App() {
+  return (
+    <>
+      <ColorTracker />
+    </>
+  )
 }
-
-export default App

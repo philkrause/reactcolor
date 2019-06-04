@@ -7,6 +7,51 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
   min-height: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+  height: 8rem;
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 2.8rem;
+  border: outset white 2px;
+}
+
+.head svg {
+  padding-right: 1.2rem;
+}
+
+.color-container {
+  min-width: 720px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.color-container input {
+  transform: rotate(270deg);
+  height: 20rem;
+  width: 12rem;
+  color: black;
+}
+
+.color-container label {
+  font-family: 'Maiden Orange', cursive;
+  color: black;
+}
+
+.color-container > p {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
