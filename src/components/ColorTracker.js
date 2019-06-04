@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-// import Header from './Header'
+import Header from './Header'
 
 export default function ColorContainer() {
 
-  const random = Math.floor(Math.random() * 100)
-  const randomH = Math.floor(Math.random() * 360)
+  const random = () => Math.floor(Math.random() * 100)
+  const randomH = () => Math.floor(Math.random() * 360)
 
   const [hue, setHue] = useState(randomH)
   const [sat, setSat] = useState(random)
@@ -33,11 +33,11 @@ export default function ColorContainer() {
 
   return (
     <>
-      {/* <Header
-        hue={0}
-        sat={0}
-        lit={0}
-      /> */}
+      <Header
+        hue={hue}
+        sat={sat}
+        lit={lit}
+      />
       <section className="color-container">
         <p>
           <input
